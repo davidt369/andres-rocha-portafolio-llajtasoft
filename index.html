@@ -3,41 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Andres-Portfolio</title>
+    <link icon="favicon" href="./asstets/andres-foto.png" rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <nav class="fixed top-0 left-0 w-full bg-indigo-950 border-b border-indigo-700 z-50 p-4 flex justify-between items-center">
-        <a href="#inicio" class="">
-          <img src="./asstets/logo-andres.webp" alt="logo-andres" class="w-16 h-auto ">
-        </a>
 
-        <button id="hamburger-btn" class="lg:hidden text-white focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-
-        <ul class="flex space-x-6">
+  <body class="bg-indigo-950 text-indigo-50">
+    <header class="h-16 fixed top-0 left-0 w-full bg-indigo-950 border-b border-indigo-700 z-50 p-4 flex justify-between items-center">
+   
+      <a href="#inicio" class="">
+        <img src="./asstets/logo-andres.webp" alt="logo-andres" class="w-16 h-auto ">
+      </a>
+      <nav>
+        <ul class="flex gap-2 space-x-6  items-center">
           <li><a href="#inicio" class="text-white hover:text-indigo-400 transition">Inicio</a></li>
-          <li><a href="#acerca-de-mi" class="text-white hover:text-indigo-400 transition">Acerca de mí</a></li>
-          <li><a href="#mis-proyectos" class="text-white hover:text-indigo-400 transition">Mis proyectos</a></li>
-          <li><a href="#mis-habilidades" class="text-white hover:text-indigo-400 transition">Mis habilidades</a></li>
+          <li><a href="#acerca-de-mi" class="text-white hover:text-indigo-400 transition">Sobre mí</a></li>
+          <li><a href="#mis-proyectos" class="text-white hover:text-indigo-400 transition">Proyectos</a></li>
+          <li><a href="#mis-habilidades" class="text-white hover:text-indigo-400 transition">Habilidades</a></li>
           <li><a href="#contacto" class="text-white hover:text-indigo-400 transition">Contacto</a></li>
-          <li><a href="#mis-certificaciones" class="text-white hover:text-indigo-400 transition">Mis Certificaciones</a></li>
+          <li><a href="#mis-certificaciones" class="text-white hover:text-indigo-400 transition">Certificaciones</a></li>
         </ul>
-        <a href="#contactame" class="bg-indigo-400 text-indigo-950 px-4 py-2 rounded-md hover:bg-indigo-300 transition">Contáctame</a>
+       
       </nav>
-    </header>
-    <script>
-      const hamburgerBtn = document.getElementById('hamburger-btn');
-      const menu = document.getElementById('menu');
     
-      // Alterna la visibilidad del menú al hacer clic en el botón hamburguesa
-      hamburgerBtn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-    </script>
+   
+   <div class="flex gap-2 items-center  ">
+    <a href="#contactame" class="bg-indigo-400 text-indigo-950 px-4 py-2 rounded-md hover:bg-indigo-300 transition">Contáctame</a>
+    <button id="btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+   </div>
+  </header>
+  <aside class=" w-64 bg-  fixed top-16 p-4 h-screen bg-blue-950 block md:hidden">
+    <nav>
+      <ul class=" space-x-6  ">
+        <li><a href="#inicio" class="text-white hover:text-indigo-400 transition">Inicio</a></li>
+        <li><a href="#acerca-de-mi" class="text-white hover:text-indigo-400 transition">Sobre mí</a></li>
+        <li><a href="#mis-proyectos" class="text-white hover:text-indigo-400 transition">Proyectos</a></li>
+        <li><a href="#mis-habilidades" class="text-white hover:text-indigo-400 transition">Habilidades</a></li>
+        <li><a href="#contacto" class="text-white hover:text-indigo-400 transition">Contacto</a></li>
+        <li><a href="#mis-certificaciones" class="text-white hover:text-indigo-400 transition">Certificaciones</a></li>
+      </ul>
+     
+    </nav>
+  </aside>
+
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+        const aside = document.querySelector('aside');
+        aside.classList.toggle('hidden');
+    });
+</script>
+   
+      <section id="home" class="h-screen bg-indigo-950 text-indigo-50 flex flex-col lg:flex-row justify-center items-center px-4 lg:px-20">
+        <div class="text-center lg:text-left lg:w-1/2">
+            <h2 class="text-4xl lg:text-5xl font-bold">Hola, soy Andres Rocha Gomez</h2>
+            <p class="text-lg lg:text-xl mt-4">Desarrollador Full Stack construyendo experiencias web excepcionales</p>
+            <a href="#contact" class="mt-6 px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400 inline-block">Contáctame</a>
+        </div>
+        <div class="mt-8 lg:mt-0 lg:w-2/3 flex justify-center">
+            <img src="./asstets/andres-foto.png" alt="Andres Rocha Gomez" class="w-40 h-40 lg:w-80 lg:h-80 rounded-full shadow-lg">
+        </div>
+    </section>
+
+  
+    <section id="about" class="p-4 md:p-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Acerca de Mi</h2>
+            <p class="text-lg">Soy un desarrollador Full Stack con experiencia en tecnologías modernas para el desarrollo web. Mi enfoque está en crear soluciones eficientes, escalables y centradas en el usuario.</p>
+        </div>
+    </section>
+
+  
+    <section id="projects" class="p-4 md:p-16 bg-indigo-950">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="./asstets/proyect-andres.png" alt="Proyecto 1" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 1</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="./asstets/proyect-andres.png"  alt="Proyecto 2" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 2</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="./asstets/proyect-andres.png"  alt="Proyecto 3" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 3</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="./asstets/proyect-andres.png"  alt="Proyecto 3" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 4</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="skills" class="py-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">💻</span>
+                    <p>HTML</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">🎨</span>
+                    <p>CSS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">🛠️</span>
+                    <p>JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">⚙️</span>
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="certifications" class="p-4 md:p-16 bg-indigo-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Certificaciones</h2>
+            <ul class="list-disc list-inside">
+                <li>Certificación 1</li>
+                <li>Certificación 2</li>
+                <li>Certificación 3</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contact" class="p-4 md:p-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+            <p>¿Tienes algún proyecto en mente? ¡Hablemos!</p>
+            <form action="#" method="POST" class="mt-8 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Tu nombre" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Tu correo" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required>
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" placeholder="Tu mensaje" rows="5" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required></textarea>
+                </div>
+                <button type="submit" class="px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-cyan-950 py-6">
+        <div class="container mx-auto text-center text-cyan-400">
+            <p>&copy; 2025 Andres Rocha Gomez. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2 hover:text-cyan-50">LinkedIn</a>
+                <a href="#" class="mx-2 hover:text-cyan-50">GitHub</a>
+                <a href="#" class="mx-2 hover:text-cyan-50">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
   </body>
 </html>

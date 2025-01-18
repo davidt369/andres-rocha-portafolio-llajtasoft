@@ -8,12 +8,34 @@
   </head>
 
   <body class="bg-indigo-950 text-indigo-50">
+    <header>
+        <nav class="fixed top-0 left-0 w-full bg-indigo-950 border-b border-indigo-700 z-50 p-4 flex justify-between items-center">
+          <a href="/" class="">
+            <img src="./asstets/logo-andres.webp" alt="logo-andres" class="w-16 h-auto ">
+          </a>
+          <ul class="flex space-x-6">
+            <li><a href="/" class="text-white hover:text-indigo-400 transition">Inicio</a></li>
+            <li><a href="/about" class="text-white hover:text-indigo-400 transition">Acerca de mí</a></li>
+            <li><a href="/projects" class="text-white hover:text-indigo-400 transition">Mis proyectos</a></li>
+            <li><a href="/skills" class="text-white hover:text-indigo-400 transition">Mis habilidades</a></li>
+            <li><a href="/contact" class="text-white hover:text-indigo-400 transition">Contacto</a></li>
+            <li><a href="/certifications" class="text-white hover:text-indigo-400 transition">Mis Certificaciones</a></li>
+          </ul>
+          <a href="/contact" class="bg-indigo-400 text-indigo-950 px-4 py-2 rounded-md hover:bg-indigo-300 transition">Contáctame</a>
+        </nav>
+        
+      </header>
 
    
-    <section id="home" class="h-screen bg-indigo-950 text-indigo-50 flex flex-col justify-center items-center">
-        <h2 class="text-4xl font-bold">Hola, soy Andres Rocha Gomez</h2>
-        <p class="text-lg mt-4">Desarrollador Full Stack construyendo experiencias web excepcionales</p>
-        <a href="#contact" class="mt-6 px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400">Contáctame</a>
+      <section id="home" class="h-screen bg-indigo-950 text-indigo-50 flex flex-col lg:flex-row justify-center items-center px-4 lg:px-20">
+        <div class="text-center lg:text-left lg:w-1/2">
+            <h2 class="text-4xl lg:text-5xl font-bold">Hola, soy Andres Rocha Gomez</h2>
+            <p class="text-lg lg:text-xl mt-4">Desarrollador Full Stack construyendo experiencias web excepcionales</p>
+            <a href="#contact" class="mt-6 px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400 inline-block">Contáctame</a>
+        </div>
+        <div class="mt-8 lg:mt-0 lg:w-2/3 flex justify-center">
+            <img src="/asstets/andres-foto.png" alt="Andres Rocha Gomez" class="w-40 h-40 lg:w-80 lg:h-80 rounded-full shadow-lg">
+        </div>
     </section>
 
   
@@ -30,7 +52,7 @@
             <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-indigo-900 shadow-md rounded p-4">
-                    <img src="https://i.pinimg.com/736x/4e/33/37/4e3337b04eee209262738add3bc0da93.jpg" alt="Proyecto 1" class="rounded mb-4">
+                    <img src="/asstets/proyect-andres.png" alt="Proyecto 1" class="rounded mb-4">
                     <h3 class="font-bold">Proyecto 1</h3>
                     <p class="mt-2">Descripción breve del proyecto.</p>
                     <div class="flex justify-between mt-4">
@@ -39,7 +61,7 @@
                     </div>
                 </div>
                 <div class="bg-indigo-900 shadow-md rounded p-4">
-                    <img src="project2.jpg" alt="Proyecto 2" class="rounded mb-4">
+                    <img src="/asstets/proyect-andres.png"  alt="Proyecto 2" class="rounded mb-4">
                     <h3 class="font-bold">Proyecto 2</h3>
                     <p class="mt-2">Descripción breve del proyecto.</p>
                     <div class="flex justify-between mt-4">
@@ -48,8 +70,17 @@
                     </div>
                 </div>
                 <div class="bg-indigo-900 shadow-md rounded p-4">
-                    <img src="project3.jpg" alt="Proyecto 3" class="rounded mb-4">
+                    <img src="/asstets/proyect-andres.png"  alt="Proyecto 3" class="rounded mb-4">
                     <h3 class="font-bold">Proyecto 3</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="/asstets/proyect-andres.png"  alt="Proyecto 3" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 4</h3>
                     <p class="mt-2">Descripción breve del proyecto.</p>
                     <div class="flex justify-between mt-4">
                         <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
@@ -86,7 +117,7 @@
     </section>
 
 
-    <section id="certifications" class="py-16 bg-indigo-800">
+    <section id="certifications" class="p-4 md:p-16 bg-indigo-800">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">Certificaciones</h2>
             <ul class="list-disc list-inside">
@@ -98,7 +129,7 @@
     </section>
 
 
-    <section id="contact" class="py-16 bg-indigo-900">
+    <section id="contact" class="p-4 md:p-16 bg-indigo-900">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">Contacto</h2>
             <p>¿Tienes algún proyecto en mente? ¡Hablemos!</p>
@@ -116,5 +147,16 @@
             </form>
         </div>
     </section>
+    <footer class="bg-cyan-950 py-6">
+        <div class="container mx-auto text-center text-cyan-400">
+            <p>&copy; 2025 Andres Rocha Gomez. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2 hover:text-cyan-50">LinkedIn</a>
+                <a href="#" class="mx-2 hover:text-cyan-50">GitHub</a>
+                <a href="#" class="mx-2 hover:text-cyan-50">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
   </body>
 </html>

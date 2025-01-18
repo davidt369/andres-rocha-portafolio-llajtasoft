@@ -6,12 +6,115 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Hola David</h1>
 
-    <h1>hola</h1>
-    <p>
-        Celso actualizo esta linea
-    </p>
+  <body class="bg-indigo-950 text-indigo-50">
+
+   
+    <section id="home" class="h-screen bg-indigo-950 text-indigo-50 flex flex-col justify-center items-center">
+        <h2 class="text-4xl font-bold">Hola, soy Andres Rocha Gomez</h2>
+        <p class="text-lg mt-4">Desarrollador Full Stack construyendo experiencias web excepcionales</p>
+        <a href="#contact" class="mt-6 px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400">Contáctame</a>
+    </section>
+
+  
+    <section id="about" class="p-4 md:p-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Acerca de Mi</h2>
+            <p class="text-lg">Soy un desarrollador Full Stack con experiencia en tecnologías modernas para el desarrollo web. Mi enfoque está en crear soluciones eficientes, escalables y centradas en el usuario.</p>
+        </div>
+    </section>
+
+  
+    <section id="projects" class="p-4 md:p-16 bg-indigo-950">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="https://i.pinimg.com/736x/4e/33/37/4e3337b04eee209262738add3bc0da93.jpg" alt="Proyecto 1" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 1</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="project2.jpg" alt="Proyecto 2" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 2</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-indigo-900 shadow-md rounded p-4">
+                    <img src="project3.jpg" alt="Proyecto 3" class="rounded mb-4">
+                    <h3 class="font-bold">Proyecto 3</h3>
+                    <p class="mt-2">Descripción breve del proyecto.</p>
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver Sitio Web</a>
+                        <a href="#" class="px-4 py-2 bg-indigo-500 text-indigo-950 rounded hover:bg-indigo-400">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="skills" class="py-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">💻</span>
+                    <p>HTML</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">🎨</span>
+                    <p>CSS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">🛠️</span>
+                    <p>JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-4xl">⚙️</span>
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="certifications" class="py-16 bg-indigo-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Certificaciones</h2>
+            <ul class="list-disc list-inside">
+                <li>Certificación 1</li>
+                <li>Certificación 2</li>
+                <li>Certificación 3</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-16 bg-indigo-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+            <p>¿Tienes algún proyecto en mente? ¡Hablemos!</p>
+            <form action="#" method="POST" class="mt-8 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Tu nombre" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Tu correo" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required>
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" placeholder="Tu mensaje" rows="5" class="w-full p-3 border rounded bg-indigo-800 text-indigo-50" required></textarea>
+                </div>
+                <button type="submit" class="px-6 py-3 bg-indigo-500 text-indigo-950 font-bold rounded hover:bg-indigo-400">Enviar</button>
+            </form>
+        </div>
+    </section>
   </body>
 </html>
